@@ -19,6 +19,12 @@ test it with:
     curl localhost:4567
 
 ## Deploy to AWS
+Login to AWS repository
+
+    ecr get-login --no-include-email
+
+get the output and execute in your consolle.    
+
 After the build completes, tag your image so you can push the image to this repository:
 
     docker tag live-machine:latest 299940762763.dkr.ecr.eu-south-1.amazonaws.com/live-machine:latest
